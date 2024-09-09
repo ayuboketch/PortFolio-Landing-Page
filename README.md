@@ -29,4 +29,4 @@ bash
 git clone https://github.com/ayuboketch/PortFolio-Landing-Page.git
 cd your-repo
 
-<img width="1680" alt="Screenshot 2024-09-09 at 15 03 19" src="https://github.com/user-attachments/assets/fc85e5f8-df2a-4e3a-bed5-94c1b7400099">
+<img width="1680" alt="Screenshot 2024-09-09 at 15 10 21" src="https://github.com/user-attachments/assets/81607647-6fd2-4673-9390-4d3c015af563">
