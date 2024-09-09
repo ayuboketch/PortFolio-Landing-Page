@@ -1,0 +1,550 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  background-color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mini-profile-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Hero Section */
+#hero {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: white;
+  font-weight: bold;
+}
+
+/* Orbital Containers */
+.orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Orbital sizes for different circles */
+#orbit1 {
+  animation: rotate1 8s infinite linear;
+}
+
+#orbit2 {
+  animation: rotate2 12s infinite linear;
+}
+
+#orbit3 {
+  animation: rotate3 16s infinite linear;
+}
+
+#orbit4 {
+  animation: rotate4 20s infinite linear;
+}
+
+#orbit5 {
+  animation: rotate5 24s infinite linear;
+}
+
+#orbit6 {
+  animation: rotate6 28s infinite linear;
+  border-radius: 50%;
+}
+
+#orbit7 {
+  animation: rotate6 32s infinite linear;
+  border-radius: 50%;
+}
+
+/* Logo circles */
+.logo-circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+  transition: transform 0.3s ease, transform 0.4s ease;
+  border: 2px solid transparent;
+}
+
+.logo-circle:hover {
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.8), 0 0 40px rgba(255, 105, 180, 0.6), 0 0 60px rgba(255, 105, 180, 0.4);
+  transform: scale(1.05);
+}
+
+.logo-circle img {
+  width: 60%;
+
+}
+
+#logo-html {
+  transform: translateX(120px) rotate(0deg);
+  border: 1px solid rgb(200, 67, 23);
+  box-shadow: 0 0 10px, 0 0 20px, 0 0 30px rgb(200, 67, 23);
+}
+
+#logo-css {
+  transform: translateX(180px) rotate(0deg);
+  border: 1px solid rgb(14, 28, 221);
+}
+
+#logo-js {
+  transform: translateX(240px) rotate(0deg);
+  border: 1px solid rgb(255, 242, 0);
+  box-shadow: 0 0 10px, 0 0 20px, 0 0 30px rgb(255, 242, 0);
+}
+
+#logo-react {
+  transform: translateX(300px) rotate(0deg);
+  border: 1px solid rgb(39, 133, 214);
+  box-shadow: 0 0 10px, 0 0 20px, 0 0 30px rgb(39, 133, 214);
+}
+
+#logo-node {
+  transform: translateX(360px) rotate(0deg);
+  border: 1px solid rgb(5, 82, 5);
+}
+
+#logo-npm {
+  transform: translateX(420px) rotate(0deg);
+  border: 1px solid rgb(255, 0, 0);
+}
+
+#logo-tailwind {
+  transform: translateX(480px) rotate(0deg);
+  border: 1px solid rgb(7, 223, 234);
+  box-shadow: 0 0 10px, 0 0 20px, 0 0 30px rgb(39, 214, 208);
+}
+
+/* Animations for each orbit */
+@keyframes rotate1 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes rotate2 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes rotate3 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes rotate4 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes rotate5 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes rotate6 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes rotate7 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
+
+/* CTA Button */
+.cta-button {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: x-large;
+  font-weight: bold;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: visible;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.3), 0 0 45px rgba(255, 255, 255, 0.1);
+}
+
+.cta-button1 {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: none;
+  border: none;
+  outline: none;
+  margin: none;
+}
+
+.cta-button::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 70%);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.5;
+  filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #6f0600;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7),
+    0 0 40px rgba(255, 255, 255, 0.5),
+    0 0 60px rgba(255, 255, 255, 0.3);
+}
+
+.cta-button:hover::before {
+  opacity: 0.8;
+  filter: blur(10px);
+}
+
+.cta-button::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* About Section */
+#about {
+  max-width: 70%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 50px;
+  background: linear-gradient(300deg, deepskyblue, darkviolet, blue);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  color: #fff;
+  text-align: center;
+  border-radius: 50px;
+  opacity: 0.8;
+  transition: opacity 1s ease 0s;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#about:hover {
+  opacity: 1;
+}
+
+#about h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-content {
+  align-items: center;
+  margin-top: 30px;
+  height: auto;
+}
+
+.about-content img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.bio {
+  max-width: 600px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .about-content img {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #hero h1 {
+    font-size: 4rem;
+  }
+}
+
+#projects {
+  margin: 20px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.projects-container {
+  display: flex;
+  overflow-x: auto;
+  /* Enable horizontal scrolling */
+  scroll-behavior: smooth;
+  /* Smooth scrolling */
+  /* justify-content: flex-start; */
+  justify-content: space-evenly;
+  justify-content: center;
+  /* Align projects to the left */
+  /* border: 1px solid red; */
+  margin: 30px;
+  align-items: center;
+  height: auto;
+  width: 90%;
+  min-height: 350px;
+  flex-wrap: nowrap;
+  /* Ensure projects stay in one line for carousel */
+}
+
+.project {
+  min-height: 300px;
+  min-width: 15%;
+  margin: 20px;
+  transition: transform 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  border-radius: 16px;
+  background: rgba(95, 4, 4, 0.2);
+  box-shadow: 0 4px 30px rgba(196, 190, 190, 0.325);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(95, 4, 4, 0.3);
+  opacity: 0.6;
+  transition: opacity 0.5s ease 0.5s;
+  background-size: 300% 300%;
+  /* align-content: center; */
+  border: 1px solid white;
+}
+
+.project:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: transform 1s ease-in-out;
+}
+
+/* Navigation buttons */
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 10px;
+}
+
+.project-link {
+  background-color: #1a1a1a;
+}
+
+.inner-project-details {
+  border: 10px solid red;
+  height: auto;
+}
+
+.project-2 h3 {
+  margin: 10px;
+}
+
+.project-2 p {
+  height: 200px;
+  overflow: hidden;
+  max-width: 250px;
+}
+
+.project-2 button {
+  border: 1px solid red;
+  margin-top: 115px;
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+
+.backgroundImage {
+  background-image: url('./dist/assets/356806281-3bfdbddb-b76d-4583-8aba-a8637fce67a2.png');
+  background-size: cover;
+  /* Ensures the image covers the tile without distortion */
+  background-position: center;
+  /* Centers the image within the tile */
+  border-radius: 10px;
+  /* Optional: Rounds the corners of the tile */
+}
+
+
+#contact {
+  margin: 20px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  text-align: center;
+}
+
+.contact-info {
+  display: inline-block;
+  text-align: left;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.skills {
+  margin: 20px;
+}
+
+footer {
+  border-top: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+}
+
+.favicon {
+  width: 30px;
+  height: 30px;
+}
