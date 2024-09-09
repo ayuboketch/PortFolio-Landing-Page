@@ -1,7 +1,11 @@
 # PortFolio-Landing-Page
-Project: PortFolio Landing Page - Advanced HTML and CSS Course
+
+#Project: PortFolio Landing Page - Advanced HTML and CSS Course
+
 ![PortFolio](https://img.shields.io/badge/Status-Development-blue) ![GitHub license](https://img.shields.io/badge/license-MIT-green)
+
 <img width="1680" alt="Screenshot 2024-09-09 at 15 02 38" src="https://github.com/user-attachments/assets/c5dfa2e5-ebce-4d36-bcfb-54f04c95a613">
+
 Welcome to my portfolio! This website showcases my projects, skills, and background as a front-end developer.
 Features
 
